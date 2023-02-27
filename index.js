@@ -2,6 +2,8 @@
 //  var number  = 5; // in-line comment
 
 // ======== Data Types ========= ///
+
+
 /** Data Types:
  * undefined, null,, boolean, string, symbol, number, and object
 
@@ -19,6 +21,8 @@ myName = 8; // for whole program
 let ourName = "freecodeCamp"; // within the scope
 const pi = 3.14 // constant name 
 */
+
+
 // ======== Storing Values with Assignment Operators ========= ///
 
 // var a;
@@ -38,7 +42,11 @@ const pi = 3.14 // constant name
 // b = c + 1;
 // c = c + " String!";
 
+
+
 // ======== Declarations assignment ========= ///
+
+
 
 // var studlyCapVar;
 // var properCamelCase;
@@ -47,7 +55,11 @@ const pi = 3.14 // constant name
 // studlyCapVar = 10;
 // properCamelCase = "A String";
 // titleCaseOver = 9000;
+
+
 // ======== plus mines multiply assignment ========= ///
+
+
 
 // var a = 5;
 // var b = 12;
@@ -66,10 +78,14 @@ const pi = 3.14 // constant name
 
 // ======== double quotes => Quote string ========= ///
 
+
+
 // var myStr = "I am a  \"double Quoted \" string inside  \"double quotes \" ";
 // console.log(myStr);
 
 // ======== single quotes => Quote string ========= ///
+
+
 
 // var myStr = '<a href="https://www.w3schools.com/">Visit W3Schools.com!</a>';
 
@@ -113,6 +129,8 @@ const pi = 3.14 // constant name
 
 // ========String length ========= ///
 
+
+
 // var firstNameLength = 0;
 // var firstName = "Ada";
 // firstNameLength = firstName.length;
@@ -126,6 +144,8 @@ const pi = 3.14 // constant name
 
 // ========Bracket notation ========= ///
 
+
+
 // var firstLetterOfFirstName = "";
 // var firstName = "Ada";
 // firstLetterOfFirstName = firstName[0];
@@ -136,7 +156,11 @@ const pi = 3.14 // constant name
 // firstLetterOfLastName = lastName[0]
 // console.log(firstLetterOfLastName);
 
+
+
 // ======== String Immutability ========= ///
+
+
 
 // var myStr = "Jello World";
 
@@ -144,7 +168,11 @@ const pi = 3.14 // constant name
 // myStr = "Hello World"; 
 // console.log(myStr);
 
+
+
 // ======== last letter in string ========= ///
+
+
 
 // var firstName = 'Abdurahmonjon';
 // var lastLetterOfFirstName = firstName[firstName.length -1];
@@ -158,7 +186,11 @@ const pi = 3.14 // constant name
 // console.log(thirdLetterOfFirstName);
 
 
+
+
 // ======== Word Blanks ========= ///
+
+
 
 // function wordBlanks(myNoun, myAdjective, myVerb, myAdverb){
 //     // your code bellow
@@ -170,20 +202,32 @@ const pi = 3.14 // constant name
 // console.log(wordBlanks("dog", "big", "ran", "quickly"));
 // console.log(wordBlanks("bike", "slow", "flew", "slowly"));
 
+
+
 // ======== Arrays ========= ///
+
+
 // var ourArray = ["John", 23];
 // console.log(ourArray);
 // var myArray = ["Ibragimov", 31];
 // console.log(myArray);
 
+
+
 // ======== Nest Arrays ========= ///
+
+
 
 // var ourArray = [["the universe", 42], ["everything", 2023]];
 // console.log(ourArray);
 
 // var myArray = [ ["Bulls", 23], ["White Fox", 50]];
 
+
+
 // ======== access array data ========= ///
+
+
 // var ourArray = [50, 60, 70];
 // var ourData = ourArray[0];
 // console.log(ourData);
@@ -192,7 +236,13 @@ const pi = 3.14 // constant name
 // var myData = myArray[0];
 // console.log(myData);
 
+
+
+
 // ======== change array  ========= ///
+
+
+
 
 // var ourArray = [50, 60, 70];
 // ourArray[1] = 45
@@ -202,7 +252,13 @@ const pi = 3.14 // constant name
 // myArray[myArray.length -1] = 20;
 // console.log(myArray);
 
+
+
+
 // ======== access multi-dimensional arrays  ========= ///
+
+
+
 
 // var myArray = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [[10, 11, 12], 13, 12, 14]]
 // //  in here I am accessing to the 3thd array and second number 8 and changing it to 31
@@ -221,7 +277,648 @@ const pi = 3.14 // constant name
 // myArray.push(["Amira", 03]);
 // console.log(myArray); // [ [ 'John', 31 ], [ 'Adolat', 27 ], [ 'Amira', 3 ] ]
 
+// ========   ========= ///
 
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
+
+
+
+
+
+
+
+
+
+// ========   ========= ///
 
 
 

@@ -1,0 +1,25 @@
+body {
+    background-color: #567189;
+    color: #CFB997;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    text-transform: capitalize;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-style: italic;
+    flex-direction: column;
+}
+span{
+    text-transform: none;
+    color: #7B8FA1;
+}
+span:hover{
+    color: #6e808f;
+    cursor: pointer;
+    transition: all 1s;
+}
