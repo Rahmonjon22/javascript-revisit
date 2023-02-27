@@ -321,54 +321,96 @@ const pi = 3.14 // constant name
 // console.log(myArray); // output => [ [ 'Amira', 3 ] ]
 
 
+// ========  Shopping list array of arrays ========= ///
+
+// var myList = [["cereal", 3],["juice", 4],["milk", 1],["bananas", 6],["apple", 5],["eggs", 10],["onion", 2] ];
+
+// // myList[1][1] = 2 // output =>  [ 'juice', 2 ],
+// myList.push(["nok", 5]); // output =>   [ 'nok', 5 ] in the end of array
+// myList.unshift(["anor", 3]);  // output => [ 'anor', 3 ], in the begging of the array
+// console.log(myList);
 
 
 
-// ========   ========= ///
+// ======== Reusable Function  ========= ///
+
+// {} this is bracket
+// ourReusableFunction is name of function
+// () parantheses where you can pass infor into it
+// function ourReusableFunction() {
+//     console.log("Heyya, World");
+// }
+// ourReusableFunction(); // it is being called here
+
+// function myReusableFunction() {
+
+//     console.log("Hello World" );
+// }
+// myReusableFunction(); // it is being called here
 
 
 
+// ======== Passing Values to Functions with Arguments  ========= ///
+
+// function ourFunctionWithArgs(a, b){
+//     console.log(a - b);
+// }
+// ourFunctionWithArgs(10, 5);
+
+// function myFunctionWithArgs(a, b){
+//     console.log(a * b);
+// }
+// myFunctionWithArgs(5, 6);
+
+
+// ======== Global Scope & functions  ========= ///
+// variables outside of functions is global scope
+
+// var myGlobal = 10;
+// function fun1(){
+//     notGlobal = 2 // if var was used it would only show in fun1 not globally 
+//      // so when you declare without var it beccomes global evein inside function
+
+// }
+
+// function fun2(){
+//     var output = " ";
+   
+//     if (typeof myGlobal != "undefined"){
+//         output += "myGlobal: " + myGlobal;
+//     }
+//     if (typeof notGlobal != "undefined") {
+//         output += " notGlobal: " + notGlobal;
+//     }
+//     console.log(output);
+// }
+// fun1();
+// fun2();
 
 
 
+// ======== Local Scope & function  ========= ///
+
+//  function myLocalScope(){
+//     var myVar = 5;
+//     console.log(myVar);
+//  }
+//  myLocalScope();
+
+//  console.log(myVar); // output => myVar is not defined
 
 
+// ======== Global vs local Scope & function  ========= ///
 
-// ========   ========= ///
+// local variable overtakes global variable
 
-
-
-
-
-
-
-
-
-// ========   ========= ///
-
-
-
-
-
-
-
-
-
-// ========   ========= ///
-
-
-
-
-
-
-
-
-
-// ========   ========= ///
-
-
-
-
+// var outWear = "T-shirt"; // global variable
+// function myOutFit(){
+//     outWear = "Jeans" // local variable
+//     return outWear;
+// }
+// console.log(outWear); // output => T-shirt
+// console.log(myOutFit()); // output => Jeans
 
 
 
