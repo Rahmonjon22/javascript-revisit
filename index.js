@@ -258,13 +258,16 @@ const pi = 3.14 // constant name
 // ======== access multi-dimensional arrays  ========= ///
 
 
-
-
 // var myArray = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [[10, 11, 12], 13, 12, 14]]
 // //  in here I am accessing to the 3thd array and second number 8 and changing it to 31
 // myArray[2][1] = 31;
 // var myData = myArray[2][1];
 // console.log(myData);
+
+
+// ========  Push array ========= ///
+
+// push addes new array in here
 
 // var ourArray = ["Stimpson", "J", "cat"];
 // ourArray.push("happy", "joy");
@@ -277,11 +280,45 @@ const pi = 3.14 // constant name
 // myArray.push(["Amira", 03]);
 // console.log(myArray); // [ [ 'John', 31 ], [ 'Adolat', 27 ], [ 'Amira', 3 ] ]
 
-// ========   ========= ///
+// ======== Pop array  ========= ///
+// pop removes arrays last item
+
+// var ourArray = [1, 2, 3];
+// var removeFromOurArray = ourArray.pop()
+// console.log(removeFromOurArray); // => 3 output
+// console.log(ourArray); // => output [ 1, 2 ]
+ 
+// var myArray = [["John", 31],["Amira", 03] ];
+// var removeFromMyArray = myArray.pop();
+// console.log(myArray); // output => [ ["John", 31] ]
 
 
 
 
+// ======== Shift array  ========= ///
+// Shift removes first item or array
+
+// var ourArray = [1, 2, 3];
+// var removeFromOurArray = ourArray.shift()
+// console.log(ourArray); // => output [ 2, 3 ]
+ 
+// var myArray = [["John", 31],["Amira", 03] ];
+// var removeFromMyArray = myArray.shift();
+// console.log(myArray); // output => [ [ 'Amira', 3 ] ]
+
+// ========  UnShift array ========= ///
+//  unShift function changes first item of the array
+
+// var ourArray = ["Stimpson", "J", "Cat"];
+// ourArray.shift(); // this removes first string
+// ourArray.unshift("Happy"); // this adds first new string
+// console.log(ourArray);  // output => [ 'Happy', 'J', 'Cat' ]
+
+// var myArray = [["John", 31],["Amira", 03] ];
+// myArray.shift();
+// // myArray.unshift("Adolat", 27); // output => [ 'Adolat', 27, [ 'Amira', 3 ] ]
+// myArray.unshift(["Adolat", 27]); // output => [ [ 'Adolat', 27 ], [ 'Amira', 3 ] ]
+// console.log(myArray); // output => [ [ 'Amira', 3 ] ]
 
 
 
