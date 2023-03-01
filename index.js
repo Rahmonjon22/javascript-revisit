@@ -462,65 +462,93 @@ const pi = 3.14 // constant name
 
 // ======== Stand in Line   ========= ///
 
-function nextInLine(arr, item) {
-    return item;
+// function nextInLine(arr, item) {
+//     arr.push(item);
+//     // return item;
+//     return arr.shift(); // shift removes first item and retturns the items
+// }
+
+// var testArr = [1,2,3,4,5];
+
+// console.log("Before: ", JSON.stringify(testArr));
+// //  The JSON.stringify() static method converts a JavaScript value 
+// //  to a JSON string, optionally replacing values if a replacer function is specified or
+// //  optionally including only the specified properties if a replacer array is specified.
+// console.log(nextInLine(testArr, 6));
+// console.log("After: " + JSON.stringify(testArr));
+
+
+// // ========  Booleans ========= ///
+
+// function welcomeToBooleans (){
+//     return true;
+// }
+// console.log(welcomeToBooleans());
+
+
+
+
+// ======== Conditional Logic with If statement ========= ///
+
+// function ourTrueOrFalse(isItTrue) {
+//     if(isItTrue ){ // this is variable 
+//         return "yes, it is true";
+//     }
+//     return "no it is not true";
+// }
+// console.log(ourTrueOrFalse(false));
+
+// function TrueOrFalse(wasItTrue) {
+//     if(wasItTrue){
+//         return "yes, it was true";
+//     }
+//     return "no it was not false";
+// }
+// console.log(TrueOrFalse(true));
+
+
+
+
+// ========  EQUALITY  operators ========= ///
+
+// function testEqual(val) {
+//     if (val == 10) {
+//         return "Equal"
+//     }
+//     return "Not Equal"
+// }
+// // testEqual(10);
+// console.log(testEqual(10));
+
+// ======== Strict EQUALITY  operators  ========= ///
+
+
+function testEqual(val) {
+    if (val == 7) {
+        return "Equal"
+    }
+    return "Not Equal"
+}
+// testEqual(10);
+console.log(testEqual('7')); // output => equal
+
+/**
+ * 3 === 3
+ * 3 == '3' it does not convert in three equals but if it was two equals
+ */
+
+
+
+// ======== Comapre different values  ========= ///
+
+function compareEquality(a, b) {
+    if (a == b) {
+        return "Equal"
+    }
+    return "Not Equal"
 }
 
-var testArr = [1,2,3,4,5];
-
-console.log("Before: ", JSON.stringify(testArr));
-console.log(nextInLine(testArr, 6));
-console.log("After: " + JSON.stringify(testArr));
-
-
-
-
-
-
-
-
-// ========   ========= ///
-
-
-
-
-
-
-
-
-// ========   ========= ///
-
-
-
-
-
-
-
-
-
-// ========   ========= ///
-
-
-
-
-
-
-
-
-
-// ========   ========= ///
-
-
-
-
-
-
-
-
-
-// ========   ========= ///
-
-
+console.log(compareEquality(10, "10"));  // output => equal if i change (a == b) to => (a === b) then it is not equal
 
 
 
