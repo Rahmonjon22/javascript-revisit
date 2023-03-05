@@ -818,15 +818,142 @@ Replacing if else chains with switch statement
 //     else console.log(i);
 // }
 
-
-
 // ======== Boolean values from Functions  ========= ///
+// function isLess(a, b) {
+//   if (a < b) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// console.log(isLess(10, 15));
+// better use this way
+// function isLess(a, b) {
+//     return a < b;
+// }
+// console.log(isLess(10, 15));
 
-// ========   ========= ///
+// ======== return early pattern from functions ========= ///
 
-// ========   ========= ///
+// function abTest(a, b) {
+//   if (a < 0 || b < 0) {
+//     return undefined; // output => unddefined
+//   }
+//   return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
+// }
+// console.log(abTest(-2, 2));
+// console.log(abTest(2, 2));
 
-// ========   ========= ///
+// ======== Counting Cards  ========= ///
+
+// let count = 0;
+
+// function cc(card) {
+//   switch (card) {
+//     case 2:
+//     case 3:
+//     case 4:
+//     case 5:
+//     case 6:
+//       count++;
+//       break;
+//     case 10:
+//     case "J":
+//     case "Q":
+//     case "K":
+//       count--;
+//       break;
+//   }
+//   let holdbet = "Hold";
+//   if(count > 0){
+//     holdbet = "Bet";
+//   }
+
+//   return count+ " " + holdbet;
+// }
+
+// cc(2);
+// cc("K");
+// cc(10);
+// cc("K");
+// cc("A");
+// console.log(cc(4));
+
+// ======== Build Objects  ========= ///
+
+// let ourDog = {
+//     "name": "Camper",
+//     "legs": 4,
+//     "tails": 1,
+//     "friends": ["everything"]
+// };
+
+// let NameChange = ourDog.name
+
+// let myDog ={
+//     "name": "It",
+//     "legs": 3,
+//     "tails": 2,
+//     "friends": []
+// }
+
+// /*
+// accessing object property with dot notation
+// */
+// let testObj = {
+//     "hat": "ballcap",
+//     "shirt": "jersey",
+//     "shoes": "bravo"
+// }
+// let hatval = testObj.hat;
+// let shirtVal = testObj.shirt;
+/*
+accessing object property with bracket notation
+*/
+
+// let testObj = {
+//     "an entree": "burger",
+//     "my shirt": "jersey",
+//     "the drinks": "water"
+// };
+// let entreeVal = testObj["an entree"];
+// let shirtVal = testObj["my shirt"];
+// console.log(entreeVal); // => burger
+
+/**
+ * access object property with variable
+ */
+
+let testObj = {
+    12 : "Namath",
+    16: "Montana",
+    19: "Unitas"
+};
+let playerNumber = 16;
+let player = testObj[playerNumber];
+console.log(player); // => Montana
+
+/**
+ * updating object properties
+ */
+let ourDog = {
+    "name": "Camper",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["everything"]
+};
+
+ourDog.name = "Happy Camper";
+console.log(ourDog);
+
+let myLife ={
+    "name": "Coder",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["FreeCodeCampers"]
+}
+myLife.name = "happy Coder";
+
 
 // ========   ========= ///
 
