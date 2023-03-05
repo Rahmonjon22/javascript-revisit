@@ -523,14 +523,14 @@ const pi = 3.14 // constant name
 // ======== Strict EQUALITY  operators  ========= ///
 
 
-function testEqual(val) {
-    if (val == 7) {
-        return "Equal"
-    }
-    return "Not Equal"
-}
-// testEqual(10);
-console.log(testEqual('7')); // output => equal
+// function testEqual(val) {
+//     if (val == 7) {
+//         return "Equal"
+//     }
+//     return "Not Equal"
+// }
+// // testEqual(10);
+// console.log(testEqual('7')); // output => equal
 
 /**
  * 3 === 3
@@ -541,30 +541,68 @@ console.log(testEqual('7')); // output => equal
 
 // ======== Comapre different values  ========= ///
 
-function compareEquality(a, b) {
-    if (a == b) {
-        return "Equal"
+// function compareEquality(a, b) {
+//     if (a == b) {
+//         return "Equal"
+//     }
+//     return "Not Equal"
+// }
+
+// console.log(compareEquality(10, "10"));  // output => equal if i change (a == b) to => (a === b) then it is not equal
+
+// function testNotEqual(val) {
+//     if (val != 99 ) {
+//         return "Not Equal"
+//     }
+//     return "Equal"
+// }
+// console.log(testNotEqual(10));
+
+// function testStrictNotEqual(val) {
+//     if (val !== 17) {
+//         // Only Change Code above this Line
+//         return "Not Equal"
+//     }
+//     return "Equal"
+// }
+// // Change this  Value to Test
+// console.log(testStrictNotEqual(10));  // output => not equal 
+
+
+// ======== Equality Operators  ========= ///
+
+// function testGreaterThan(val) {
+//     if (val > 100) {
+//         return "Over 100";
+//     }
+//     if (val > 10) {
+//         return "Over 10";
+//     }
+//     return "10 or Under";
+// }
+// console.log(testGreaterThan(10));
+
+// function testGreaterOrEqual(val) {
+//     if (val >= 20) {
+//         return "20 or Over";
+//     }
+//     if (val >= 10) {
+//         return "10 or Over";
+//     }
+//     return "Less than 10";
+// }
+// console.log(testGreaterThan(10));
+
+function testLessThan(val) {
+    if (val < 25) {
+        return "under 25";
     }
-    return "Not Equal"
+    if (val < 55) {
+        return "under 55";
+    }
+    return "55 or over";
 }
-
-console.log(compareEquality(10, "10"));  // output => equal if i change (a == b) to => (a === b) then it is not equal
-
-
-
-
-
-
-
-// ========   ========= ///
-
-
-
-
-
-
-
-
+console.log(testLessThan(10));
 
 // ========   ========= ///
 
