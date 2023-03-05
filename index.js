@@ -718,8 +718,109 @@ const pi = 3.14 // constant name
 //   return answer;
 // }
 // console.log(switchOfStuff("a"));
+/*
+multiple switch statement
+*/
+// function sequentialSizes(val) {
+//   var answer = "";
+//   switch (val) {
+//     case 1:
+//     case 2:
+//     case 3:
+//       answer = "Low";
+//       break;
+//     case 4:
+//     case 5:
+//     case 6:
+//       answer = "Mid";
+//       break;
+//     case 7:
+//     case 8:
+//     case 9:
+//       answer = "high";
+//       break;
+//   }
+//   return answer;
+// }
+// console.log(sequentialSizes(8));
 
-// ========   ========= ///
+/*
+Replacing if else chains with switch statement
+*/
+// function changeToSwitch(val) {
+//   var answer = "";
+//   if (val === "bob") {
+//     answer = "Marley";
+//   } else if (val === 42) {
+//     answer = "The Answer";
+//   } else if (val === 1) {
+//     answer = "there is no #1";
+//   } else if (val === 99) {
+//     answer = "missed me by this much!";
+//   } else if (val === 7) {
+//     answer = "ate nine";
+//   }
+//   return answer;
+// }
+// console.log(changeToSwitch("bob"));
+
+// function changedtoSwitch(params) {
+//   var reply = "";
+//   switch (params) {
+//     case "bob":
+//       reply = "Marley";
+//       break;
+//     case 42:
+//       reply = "The answer";
+//       break;
+//     case 1:
+//       reply = "there is no #1";
+//       break;
+//     case 99:
+//       reply = "missed me by this much";
+//       break;
+//     case 7:
+//       reply = "ate nine!!!";
+//       break;
+//   }
+// }
+// console.log(changedtoSwitch(42));
+
+// let day;
+// switch (new Date().getDay()) {
+//   case 0:
+//     day = "Sunday";
+//     break;
+//   case 1:
+//     day = "Monday";
+//     break;
+//   case 2:
+//     day = "Tuesday";
+//     break;
+//   case 3:
+//     day = "Wednesday";
+//     break;
+//   case 4:
+//     day = "Thursday";
+//     break;
+//   case 5:
+//     day = "Friday";
+//     break;
+//   case  6:
+//     day = "Saturday";
+// }
+// console.log(getDay());
+// for (let i = 0; i < 100;) console.log((++i % 3 ? '' : 'Fizz') + (i % 5 ? '' : 'Buzz') || i)
+// for (let i = 1; i < 100; i++) {
+//     if (i % 15 == 0) console.log("FizzBuzz");
+//     else if (i % 10 == 0) console.log("Fizz");
+//     else if (i % 5 == 0) console.log("Buzz");
+//     else console.log(i);
+// }
+
+
+
+// ======== Boolean values from Functions  ========= ///
 
 // ========   ========= ///
 
