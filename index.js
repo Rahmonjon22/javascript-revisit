@@ -961,45 +961,82 @@ accessing object property with bracket notation
 // console.log(myLife);
 
 // ======== using obj for lookups  ========= ///
-function phoneticLookup(val) {
-  //=> 1:56:29
-  var result = "";
-  var lookup = {
-"alpha": "Adams",
-"bravo": "Boston",
-"charlie": "Denver",
-"delta": "Easy",
-"foxtrot": "Frank"
-  };
+// function phoneticLookup(val) {
+//   //=> 1:56:29
+//   var result = "";
+//   var lookup = {
+//     "alpha": "Adams",
+//     "bravo": "Boston",
+//     "charlie": "Chicago",
+//     "delta": "Denver",
+//     "echo": "Easy",
+//     "foxtrot": "Frank",
+//   };
+//   result = lookup[val];
 
-//   switch (val) {
-//     case "alpha":
-//       result = "Adams";
-//       break;
-//     case "bravo":
-//       result = "Boston";
-//       break;
-//     case "charlie":
-//       result = "Chicago";
-//       break;
-//     case "delta":
-//       result = "Denver";
-//       break;
-//     case "echo":
-//       result = "Easy";
-//       break;
-//     case "foxrot":
-//       result = "Frank";
-//       break;
+//   //   switch (val) {
+//   //     case "alpha":
+//   //       result = "Adams";
+//   //       break;
+//   //     case "bravo":
+//   //       result = "Boston";
+//   //       break;
+//   //     case "charlie":
+//   //       result = "Chicago";
+//   //       break;
+//   //     case "delta":
+//   //       result = "Denver";
+//   //       break;
+//   //     case "echo":
+//   //       result = "Easy";
+//   //       break;
+//   //     case "foxrot":
+//   //       result = "Frank";
+//   //       break;
+//   //   }
+
+//   return result;
+// }
+// console.log(phoneticLookup("echo"));
+
+// ======== Testing Objects for Properties  ========= ///
+
+// let myObj = {
+//     gift: "pony",
+//     pet: "kitten",
+//     bed: "sleigh"
+// }
+// function checkObj(checkProp) {
+//   if(myObj.hasOwnProperty(checkProp)){
+//     return myObj[checkProp];
+//   } else {
+//     return "Not Found"
 //   }
 
-  return result
-}
-console.log(phoneticLookup("echo"));
+//     return "Change me!";
+// }
+// console.log(checkObj("gift"));
+// console.log(checkObj("hello"));
 
-// ========   ========= ///
+// ======== Manipulating Complex Objects  ========= ///
 
-// ========   ========= ///
+// let myMusic = [
+//   {
+//     artist: "Billy Joel",
+//     title: "Piano Man",
+//     release_year: 1973,
+//     formats: ["CD", "8T", "LP"],
+//     gold: true,
+//   },
+// //   we created second obj similiar to json
+//   {
+//     artist: "Beau Carnes",
+//     title: "Cereal Man",
+//     release_year: 2003,
+//     formats: ["Youtube video"],
+//     gold: true,
+//   },
+// ];
 
 // ========   ========= ///
 
