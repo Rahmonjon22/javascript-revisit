@@ -924,38 +924,78 @@ accessing object property with bracket notation
  * access object property with variable
  */
 
-let testObj = {
-    12 : "Namath",
-    16: "Montana",
-    19: "Unitas"
-};
-let playerNumber = 16;
-let player = testObj[playerNumber];
-console.log(player); // => Montana
+// let testObj = {
+//     12 : "Namath",
+//     16: "Montana",
+//     19: "Unitas"
+// };
+// let playerNumber = 16;
+// let player = testObj[playerNumber];
+// console.log(player); // => Montana
 
 /**
  * updating object properties
  */
-let ourDog = {
-    "name": "Camper",
-    "legs": 4,
-    "tails": 1,
-    "friends": ["everything"]
-};
+// let ourDog = {
+//     "name": "Camper",
+//     "legs": 4,
+//     "tails": 1,
+//     "friends": ["everything"]
+// };
 
-ourDog.name = "Happy Camper";
-console.log(ourDog);
+// ourDog.name = "Happy Camper";
+// console.log(ourDog);
 
-let myLife ={
-    "name": "Coder",
-    "legs": 4,
-    "tails": 1,
-    "friends": ["FreeCodeCampers"]
+// let myLife ={
+//     "name": "Coder",
+//     "legs": 4,
+//     "tails": 1,
+//     "friends": ["FreeCode Campers"]
+// }
+// myLife.name = "happy Coder";
+// myLife.friends= ["free code campers"]
+// console.log(myLife);
+// myLife["work"] = "Brunsdigital" // => added new property
+// console.log(myLife);
+// delete myLife.work // => deleted property
+// console.log(myLife);
+
+// ======== using obj for lookups  ========= ///
+function phoneticLookup(val) {
+  //=> 1:56:29
+  var result = "";
+  var lookup = {
+"alpha": "Adams",
+"bravo": "Boston",
+"charlie": "Denver",
+"delta": "Easy",
+"foxtrot": "Frank"
+  };
+
+//   switch (val) {
+//     case "alpha":
+//       result = "Adams";
+//       break;
+//     case "bravo":
+//       result = "Boston";
+//       break;
+//     case "charlie":
+//       result = "Chicago";
+//       break;
+//     case "delta":
+//       result = "Denver";
+//       break;
+//     case "echo":
+//       result = "Easy";
+//       break;
+//     case "foxrot":
+//       result = "Frank";
+//       break;
+//   }
+
+  return result
 }
-myLife.name = "happy Coder";
-
-
-// ========   ========= ///
+console.log(phoneticLookup("echo"));
 
 // ========   ========= ///
 
