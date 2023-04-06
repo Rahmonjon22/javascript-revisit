@@ -1038,7 +1038,26 @@ accessing object property with bracket notation
 //   },
 // ];
 
-// ========   ========= ///
+// ======== Accessing Nested Objects  ========= ///
+
+let myStorage = {
+    "car": {
+        "inside": {
+            "glove box": "maps",
+            "passenger seat": "crumbs"
+        },
+        "outside":  {
+            "trunk": "jack"
+        }
+    }
+};
+let gloveBoxContents = myStorage.car.inside["glove box"]; // change this line
+let gloveBoxContents2 = myStorage.car.inside; // change this line
+
+console.log(gloveBoxContents);
+console.log(gloveBoxContents2);
+
+
 
 // ========   ========= ///
 
