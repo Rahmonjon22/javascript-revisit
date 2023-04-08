@@ -1085,49 +1085,68 @@ accessing object property with bracket notation
 
 // ======== Record Collection   ========= ///
 
-let collection = {
-    "2548": {
-        "album": "Slippery when wet",
-        "artist": "Bon Jovi",
-        "tracks": [
-            "let it rock",
-            "you give love a bad name"
-        ]
-    },
-    "2468": {
-        "album": "1999",
-        "artist": "Prince",
-        "tracks": [
-            "1999",
-            "Little Red Corvette"
-        ]
-    },
-    "1245": {
-        "artist": "Robert Palmer",
-        "tracks": [
+// let collection = {
+//     "2548": {
+//         "album": "Slippery when wet",
+//         "artist": "Bon Jovi",
+//         "tracks": [
+//             "let it rock",
+//             "you give love a bad name"
+//         ]
+//     },
+//     "2468": {
+//         "album": "1999",
+//         "artist": "Prince",
+//         "tracks": [
+//             "1999",
+//             "Little Red Corvette"
+//         ]
+//     },
+//     "1245": {
+//         "artist": "Robert Palmer",
+//         "tracks": [
            
-        ]
-    },
-    "5439": {
-        "album": "Abba Gold"
-    },
-}
+//         ]
+//     },
+//     "5439": {
+//         "album": "Abba Gold"
+//     },
+// }
 
-// in order to keep original collection for tests down bellow is way
-let collectionCopy = JSON.parse(JSON.stringify(collection));
+// // in order to keep original collection for tests down bellow is way
+// let collectionCopy = JSON.parse(JSON.stringify(collection));
 
-// only change code bellow this line
+// // only change code bellow this line
 
-function updateRecords(id, props, value) {
-    
-    return collection;
-}
+// function updateRecords(id, prop, value) {
+//     if (value === ""){
+//         delete collection[id][prop];
+//     } else if ( prop === "tracks") {
+//         collection[id][prop] = collection[id][prop] || [];
+//         collection[id][prop].push(value); 
+//     } else {
+//         collection[id][prop] = value;
+//     }
+//     return collection;
+// }
+// updateRecords(2468, "tracks", "test")
+// console.log(updateRecords(5439, "artist", "Abba"));
 
-updateRecords(5439, "artist", "ABBA");
 
-// ========   ========= ///
+// ========  Iterate with While Loops ========= ///
 
-// ========   ========= ///
+// let myArray = [];
+// let i = 0;
+// while(i < 5){
+// myArray.push(i);
+// i++
+// }
+// console.log(myArray);
+
+
+// ========  Iterate with For Loops  ========= ///
+
+let ourArray =[]
 
 // ========   ========= ///
 
