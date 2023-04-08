@@ -1040,28 +1040,90 @@ accessing object property with bracket notation
 
 // ======== Accessing Nested Objects  ========= ///
 
-let myStorage = {
-    "car": {
-        "inside": {
-            "glove box": "maps",
-            "passenger seat": "crumbs"
-        },
-        "outside":  {
-            "trunk": "jack"
-        }
-    }
-};
-let gloveBoxContents = myStorage.car.inside["glove box"]; // change this line
-let gloveBoxContents2 = myStorage.car.inside; // change this line
+// let myStorage = {
+//     "car": {
+//         "inside": {
+//             "glove box": "maps",
+//             "passenger seat": "crumbs"
+//         },
+//         "outside":  {
+//             "trunk": "jack"
+//         }
+//     }
+// };
+// let gloveBoxContents = myStorage.car.inside["glove box"]; // change this line
+// let gloveBoxContents2 = myStorage.car.inside; // change this line
 
-console.log(gloveBoxContents);
-console.log(gloveBoxContents2);
+// console.log(gloveBoxContents);
+// console.log(gloveBoxContents2);
 
 
 
-// ========   ========= ///
+// ======== Nested Arrays  ========= ///
 
-// ========   ========= ///
+// let myPlants = [ 
+//     {
+//         type: "flowers",
+//         list: [
+//             "rose",
+//             "tulip",
+//             "dandelion"
+//         ]
+//     },
+//     {
+//         type: "trees",
+//         list: [
+//             "fir",
+//             "pine",
+//             "birch"
+//         ]
+//     }
+// ];
+// let secondTree = myPlants[1].list[1];
+// console.log(secondTree); // => pine
+
+
+// ======== Record Collection   ========= ///
+
+let collection = {
+    "2548": {
+        "album": "Slippery when wet",
+        "artist": "Bon Jovi",
+        "tracks": [
+            "let it rock",
+            "you give love a bad name"
+        ]
+    },
+    "2468": {
+        "album": "1999",
+        "artist": "Prince",
+        "tracks": [
+            "1999",
+            "Little Red Corvette"
+        ]
+    },
+    "1245": {
+        "artist": "Robert Palmer",
+        "tracks": [
+           
+        ]
+    },
+    "5439": {
+        "album": "Abba Gold"
+    },
+}
+
+// in order to keep original collection for tests down bellow is way
+let collectionCopy = JSON.parse(JSON.stringify(collection));
+
+// only change code bellow this line
+
+function updateRecords(id, props, value) {
+    
+    return collection;
+}
+
+updateRecords(5439, "artist", "ABBA");
 
 // ========   ========= ///
 
