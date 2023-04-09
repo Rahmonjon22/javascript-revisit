@@ -1257,47 +1257,54 @@ accessing object property with bracket notation
 // ======== Profile Lookup  ========= ///
 
 
-let contact = [
-    {
-        "firstName": "Akira",
-        "lastName": "Laina",
-        "number": "0543236543",
-        "likes": ["Pizza", "Coding", "Brownie Points"]
-    },
-    {
-        "firstName": "Harry",
-        "lastName": "Potter",
-        "number": "0994372684",
-        "likes": ["Hogwarts", "Magic", "Hagrid"]
-    },
-    {
-        "firstName": "Sherlock",
-        "lastName": "Holmes",
-        "number": "0489345643",
-        "likes": ["Intriguing", "Cases", "Violin"]
-    },
-    {
-        "firstName": "Kristian",
-        "lastName": "Vos",
-        "number": "unkown",
-        "likes": ["JavaScript", "Gaming", "Foxes"]
-    },
-]
+// let contact = [
+//     {
+//         "firstName": "Akira",
+//         "lastName": "Laina",
+//         "number": "0543236543",
+//         "likes": ["Pizza", "Coding", "Brownie Points"]
+//     },
+//     {
+//         "firstName": "Harry",
+//         "lastName": "Potter",
+//         "number": "0994372684",
+//         "likes": ["Hogwarts", "Magic", "Hagrid"]
+//     },
+//     {
+//         "firstName": "Sherlock",
+//         "lastName": "Holmes",
+//         "number": "0489345643",
+//         "likes": ["Intriguing", "Cases", "Violin"]
+//     },
+//     {
+//         "firstName": "Kristian",
+//         "lastName": "Vos",
+//         "number": "unkown",
+//         "likes": ["JavaScript", "Gaming", "Foxes"]
+//     },
+// ]
 
-function lookUpProfile(name, prop) {
-    for(i = 0; i < contact.length; i++){
-        if(contact[i].firstName === name){
-             return contact[i][prop]
-        }
-        return "No such contact exisit";
-    }
+// function lookUpProfile(name, prop) {
+//     for(i = 0; i < contact.length; i++){
+//         if(contact[i].firstName === name){
+//              return contact[i][prop]
+//         }
+//         return "No such contact exisit";
+//     }
   
-}
+// }
 // let data = lookUpProfile("Akira", "likes");
-let data = lookUpProfile("Sherlock", "hello");
+// // let data = lookUpProfile("Sherlock", "hello");
 
-console.log(data); // => [ 'Pizza', 'Coding', 'Brownie Points' ]
-// ========   ========= ///
+// console.log(data); // => [ 'Pizza', 'Coding', 'Brownie Points' ]
+
+
+// ======== Generate Random Fractions  ========= ///
+
+function randomFraction(params) {
+    return Math.random();
+}
+console.log(randomFraction()); // => 0.31168057230609425 it brings random number
 
 // ========   ========= ///
 
