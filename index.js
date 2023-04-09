@@ -1301,22 +1301,80 @@ accessing object property with bracket notation
 
 // ======== Generate Random Fractions  ========= ///
 
-function randomFraction(params) {
-    return Math.random();
-}
-console.log(randomFraction()); // => 0.31168057230609425 it brings random number
+// function randomFraction(params) {
+//     return Math.random();
+// }
+// console.log(randomFraction()); // => 0.31168057230609425 it brings random number
 
-// ========   ========= ///
+// ======== Generate Random Whole Numbers  ========= ///
+// The Math.floor() static method always rounds down and returns the largest integer less than or equal to a given number.
 
-// ========   ========= ///
+// let randomNumberBetween0And19 = Math.floor(Math.random() * 20);
+// function randomWholeNumber() {
+    
 
-// ========   ========= ///
+//     return Math.floor(Math.random() * 10);
+// }
 
-// ========   ========= ///
+// console.log(randomWholeNumber());
 
-// ========   ========= ///
+// ======== Generate Random Whole Numbers within a Range  ========= ///
 
-// ========   ========= ///
+// function ourRandomRange(ourMin, ourMax) {
+//     return Math.floor(Math.random() * (ourMax - ourMin + 1)) + ourMin;
+// }
+// // ourRandomRange(1, 9);
+// console.log(ourRandomRange(1, 9)); // TODO not clear make sure to understand
+
+// function randomRange(myMin, myMax) {
+//     return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
+// }
+// let myRandom = randomRange(5, 15);
+// console.log(myRandom);
+
+// ======== Use parseInt Function  ========= ///
+
+// function convertToInteger(str) {
+//     return parseInt(str)
+// }
+// console.log(convertToInteger("56")); // return value is now number not a string
+
+// lets use parseInt with Radix
+// function convertToInteger(str) {
+//     return parseInt(str, 2)
+// }
+// console.log(convertToInteger("10011")); // return  binary value is now number not a string
+
+
+
+// ======== use The Conditional (Ternary) Operator  ========= ///
+
+// condition ? statement-if-true : statement-if-false;
+
+// function checkEqual(a, b) {
+//     // if(a === b){
+//     //     return true;
+//     // }else{
+//     //     return false;
+//     // } // => instead lets use ternary operator
+//     // return a === b ? true : false; // or =>
+//     return a === b
+
+// }
+// console.log(checkEqual(1, 2));
+
+
+
+// ======== use Multiple ternary operator ========= ///
+
+// function checkSign(number) {
+//     return number > 0 ? "positive" : number < 0 ? "negative" : "zero"
+// }
+// console.log(checkSign(0));
+
+// ======== difference var or let or const  ========= ///
+
+
 
 // ========   ========= ///
 
