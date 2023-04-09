@@ -1219,26 +1219,84 @@ accessing object property with bracket notation
 
 // ========  Nesting for Loops ========= ///
 
-function multiplyAll(array) {
-  let product = 1;
-  for (let i = 0; i < array.length; i++) {
-   for(let j = 0; j <array[i].length; j++){
-    product *= array[i][j];
-   }
-  }
-  return product;
+// function multiplyAll(array) {
+//   let product = 1;
+//   for (let i = 0; i < array.length; i++) {
+//    for(let j = 0; j <array[i].length; j++){
+//     product *= array[i][j];
+//    }
+//   }
+//   return product;
+// }
+// let product = multiplyAll([
+//   [1, 2],
+//   [3, 4],
+//   [5, 6, 7],
+// ]);
+// console.log(product);
+
+// ======== Perform with do ... while loops  ========= ///
+// while checks the condition first then check the condition
+
+// Setup
+// let myArray = [];
+// let i = 10;
+
+// // while (i < 5) {
+// // myArray.push(i);
+// // i++;    
+// // }
+// // do while loop first runs then checks the condition
+// do {
+//   myArray.push(i);
+//   i++; 
+// } while (i < 5)
+// console.log(i, myArray);
+
+
+// ======== Profile Lookup  ========= ///
+
+
+let contact = [
+    {
+        "firstName": "Akira",
+        "lastName": "Laina",
+        "number": "0543236543",
+        "likes": ["Pizza", "Coding", "Brownie Points"]
+    },
+    {
+        "firstName": "Harry",
+        "lastName": "Potter",
+        "number": "0994372684",
+        "likes": ["Hogwarts", "Magic", "Hagrid"]
+    },
+    {
+        "firstName": "Sherlock",
+        "lastName": "Holmes",
+        "number": "0489345643",
+        "likes": ["Intriguing", "Cases", "Violin"]
+    },
+    {
+        "firstName": "Kristian",
+        "lastName": "Vos",
+        "number": "unkown",
+        "likes": ["JavaScript", "Gaming", "Foxes"]
+    },
+]
+
+function lookUpProfile(name, prop) {
+    for(i = 0; i < contact.length; i++){
+        if(contact[i].firstName === name){
+             return contact[i][prop]
+        }
+        return "No such contact exisit";
+    }
+  
 }
-let product = multiplyAll([
-  [1, 2],
-  [3, 4],
-  [5, 6, 7],
-]);
-console.log(product);
+// let data = lookUpProfile("Akira", "likes");
+let data = lookUpProfile("Sherlock", "hello");
 
-// ========   ========= ///
-
-// ========   ========= ///
-
+console.log(data); // => [ 'Pizza', 'Coding', 'Brownie Points' ]
 // ========   ========= ///
 
 // ========   ========= ///
