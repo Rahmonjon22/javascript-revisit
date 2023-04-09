@@ -1057,11 +1057,9 @@ accessing object property with bracket notation
 // console.log(gloveBoxContents);
 // console.log(gloveBoxContents2);
 
-
-
 // ======== Nested Arrays  ========= ///
 
-// let myPlants = [ 
+// let myPlants = [
 //     {
 //         type: "flowers",
 //         list: [
@@ -1081,7 +1079,6 @@ accessing object property with bracket notation
 // ];
 // let secondTree = myPlants[1].list[1];
 // console.log(secondTree); // => pine
-
 
 // ======== Record Collection   ========= ///
 
@@ -1105,7 +1102,7 @@ accessing object property with bracket notation
 //     "1245": {
 //         "artist": "Robert Palmer",
 //         "tracks": [
-           
+
 //         ]
 //     },
 //     "5439": {
@@ -1123,7 +1120,7 @@ accessing object property with bracket notation
 //         delete collection[id][prop];
 //     } else if ( prop === "tracks") {
 //         collection[id][prop] = collection[id][prop] || [];
-//         collection[id][prop].push(value); 
+//         collection[id][prop].push(value);
 //     } else {
 //         collection[id][prop] = value;
 //     }
@@ -1131,7 +1128,6 @@ accessing object property with bracket notation
 // }
 // updateRecords(2468, "tracks", "test")
 // console.log(updateRecords(5439, "artist", "Abba"));
-
 
 // ========  Iterate with While Loops ========= ///
 
@@ -1142,7 +1138,6 @@ accessing object property with bracket notation
 // i++
 // }
 // console.log(myArray);
-
 
 // ========  Iterate with For Loops  ========= ///
 
@@ -1183,32 +1178,62 @@ accessing object property with bracket notation
 // for(let i = 1; i < 10; i+= 2){
 //     myArray.push(i)
 //     }
-    
-//     console.log(myArray); // [ 1, 3, 5, 7, 9 ]
 
+//     console.log(myArray); // [ 1, 3, 5, 7, 9 ]
 
 // ======== Count Backwards with a for loop  ========= ///
 
+// let ourArray = [];
 
-let ourArray = [];
+// for(let i = 10; i > 0; i -= 2){
+// ourArray.push(i)
+// }
 
-for(let i = 10; i > 0; i -= 2){
-ourArray.push(i)
+// console.log(ourArray); // [ 0, 2, 4, 6, 8 ]
+// // setup
+// let myArray = [];
+
+// for(let i = 9; i > 0; i-= 2){
+// myArray.push(i)
+// }
+// console.log(myArray);
+
+// ======== Iterate through an Array with a for Loop  ========= ///
+
+// let ourArray = [9, 10, 11, 12];
+// let ourTotal = 0;
+
+// for(i=0; i < ourArray.length; i++){
+//     ourTotal += ourArray[i]
+// }
+// console.log(ourTotal); // => 42
+
+// // setup
+
+// let myArray = [2, 3, 4, 5, 6];
+// let myTotal = 0;
+// for(i = 0; i < myArray.length; i++){
+//     myTotal += myArray[i];
+// }
+// console.log(myTotal); // => 20
+
+// ========  Nesting for Loops ========= ///
+
+function multiplyAll(array) {
+  let product = 1;
+  for (let i = 0; i < array.length; i++) {
+   for(let j = 0; j <array[i].length; j++){
+    product *= array[i][j];
+   }
+  }
+  return product;
 }
-
-console.log(ourArray); // [ 0, 2, 4, 6, 8 ]
-// setup
-let myArray = [];
-
-for(let i = 9; i > 0; i-= 2){
-myArray.push(i)
-}
-console.log(myArray);
-
-
-// ========   ========= ///
-
-// ========   ========= ///
+let product = multiplyAll([
+  [1, 2],
+  [3, 4],
+  [5, 6, 7],
+]);
+console.log(product);
 
 // ========   ========= ///
 
