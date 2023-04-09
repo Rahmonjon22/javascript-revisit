@@ -1146,11 +1146,65 @@ accessing object property with bracket notation
 
 // ========  Iterate with For Loops  ========= ///
 
-let ourArray =[]
+// let ourArray =[];
 
-// ========   ========= ///
+// for (let i = 0; i < 5; i++){
+//     ourArray.push(i);
+// }
+// // setup
+// let myArray = [];
+// //  Only change code bellow this line.
 
-// ========   ========= ///
+// for (let i = 1; i < 6; i++){
+//     myArray.push(i);
+// }
+// console.log(ourArray); // [ 0, 1, 2, 3, 4 ]
+// console.log(myArray); // [ 1, 2, 3, 4, 5 ]
+
+// let myArray = [];
+
+// for (i = 0; i > -10; i--){
+//     myArray.push(i);
+// }
+
+// console.log(myArray);
+// ======== odd numbers with a for loop  ========= ///
+
+// let ourArray = [];
+
+// for(let i = 0; i < 10; i+=2){
+// ourArray.push(i)
+// }
+
+// console.log(ourArray); // [ 0, 2, 4, 6, 8 ]
+
+// let myArray = [];
+
+// for(let i = 1; i < 10; i+= 2){
+//     myArray.push(i)
+//     }
+    
+//     console.log(myArray); // [ 1, 3, 5, 7, 9 ]
+
+
+// ======== Count Backwards with a for loop  ========= ///
+
+
+let ourArray = [];
+
+for(let i = 10; i > 0; i -= 2){
+ourArray.push(i)
+}
+
+console.log(ourArray); // [ 0, 2, 4, 6, 8 ]
+// setup
+let myArray = [];
+
+for(let i = 9; i > 0; i-= 2){
+myArray.push(i)
+}
+console.log(myArray);
+
 
 // ========   ========= ///
 
