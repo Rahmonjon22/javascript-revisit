@@ -1419,11 +1419,68 @@ accessing object property with bracket notation
 // console.log(increment(5, 2)); // => 7
 // console.log(increment(5)); //=> Nan
 
-// ========   ========= ///
+// ======== use the rest operator with function parameters  ========= ///
 
-// ========   ========= ///
+// const sum = (function(){
+//     return function sum(x,y,z){
+//         const arg = [x, y, z];
+//         return arg.reduce((a, b) => a+ b, 0);
+//     };
+// })();
 
-// ========   ========= ///
+// console.log(sum(1, 2, 3)); // => 6 and correct way is down bellow
+
+// const sum = (function(){
+//     return function sum(...args){
+    
+//         return args.reduce((a, b) => a+ b, 0);
+//     };
+// })();
+
+// console.log(sum(1, 2, 3, 4));
+
+// ======== Spread operator to evaluate arrays in-place  ========= ///
+
+// const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY',];
+// let arr2;
+// (function () {
+//     arr2 = arr1; // change the line
+//     arr1[0] = 'potato'
+// })();
+// console.log(arr2); // => [ 'potato', 'FEB', 'MAR', 'APR', 'MAY' ]
+
+// const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY',];
+// let arr2;
+// (function () {
+//     arr2 = [...arr1]; // change the line
+//     arr1[0] = 'potato'
+// })();
+// console.log(arr2); // => [ 'JAN', 'FEB', 'MAR', 'APR', 'MAY' ]
+// console.log(arr1); // => [ 'potato', 'FEB', 'MAR', 'APR', 'MAY' ]
+
+
+// ======== Destructuring Assignment to assign variables from objects  ========= ///
+
+let voxel = {x: 3.6, y: 7.4, z: 6.54};
+let x = voxel.x; // x = 3.6
+let y = voxel.y; // y = 7.4
+let z = voxel.z; // z = 6.54
+
+const { x: a, y: b, z: c } = voxel; // a = 3.6, b=7.4 c = 6.54
+
+const AVG_TEMPERATURES = {
+    today: 77.5,
+    tomorrow: 79
+};
+function getTempOfTmrw(avgTemperatures){
+    "use strict";
+    // change code bellow
+    const tempOfTomorrow = undefined; // change the line
+    return tempOfTomorrow;
+}
+console.log(getTempOfTmrw(AVG_TEMPERATURES));
+
+
 
 // ========   ========= ///
 
