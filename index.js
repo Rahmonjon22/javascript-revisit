@@ -1244,18 +1244,16 @@ accessing object property with bracket notation
 
 // // while (i < 5) {
 // // myArray.push(i);
-// // i++;    
+// // i++;
 // // }
 // // do while loop first runs then checks the condition
 // do {
 //   myArray.push(i);
-//   i++; 
+//   i++;
 // } while (i < 5)
 // console.log(i, myArray);
 
-
 // ======== Profile Lookup  ========= ///
-
 
 // let contact = [
 //     {
@@ -1291,13 +1289,12 @@ accessing object property with bracket notation
 //         }
 //         return "No such contact exisit";
 //     }
-  
+
 // }
 // let data = lookUpProfile("Akira", "likes");
 // // let data = lookUpProfile("Sherlock", "hello");
 
 // console.log(data); // => [ 'Pizza', 'Coding', 'Brownie Points' ]
-
 
 // ======== Generate Random Fractions  ========= ///
 
@@ -1311,7 +1308,6 @@ accessing object property with bracket notation
 
 // let randomNumberBetween0And19 = Math.floor(Math.random() * 20);
 // function randomWholeNumber() {
-    
 
 //     return Math.floor(Math.random() * 10);
 // }
@@ -1345,8 +1341,6 @@ accessing object property with bracket notation
 // }
 // console.log(convertToInteger("10011")); // return  binary value is now number not a string
 
-
-
 // ======== use The Conditional (Ternary) Operator  ========= ///
 
 // condition ? statement-if-true : statement-if-false;
@@ -1363,8 +1357,6 @@ accessing object property with bracket notation
 // }
 // console.log(checkEqual(1, 2));
 
-
-
 // ======== use Multiple ternary operator ========= ///
 
 // function checkSign(number) {
@@ -1374,33 +1366,58 @@ accessing object property with bracket notation
 
 // ======== Prevent Object Mutation  ========= ///
 
-function freezeObj() {
-    "use strict";
-    const MATH_CONSTANTS = {
-        PI: 3.14
-    };
-    Object.freeze(MATH_CONSTANTS); // => when you dont want to change value then use Object.freeze
-    try {
-        MATH_CONSTANTS.PI = 99;
-    } catch ( ex ) {
-        console.log(ex);
-    }
-    return MATH_CONSTANTS.PI;
-}
-const PI = freezeObj();
-console.log(PI);
-
+// function freezeObj() {
+//     "use strict";
+//     const MATH_CONSTANTS = {
+//         PI: 3.14
+//     };
+//     Object.freeze(MATH_CONSTANTS); // => when you dont want to change value then use Object.freeze
+//     try {
+//         MATH_CONSTANTS.PI = 99;
+//     } catch ( ex ) {
+//         console.log(ex);
+//     }
+//     return MATH_CONSTANTS.PI;
+// }
+// const PI = freezeObj();
+// console.log(PI);
 
 // ======== Arrow Function  ========= ///
 // use arrow functions to write concise anonymous functions
-let magic = function(){
-    return new Date();
-}
+// let magic = function(){
+//     return new Date();
+// } //=> check bellow
+// const magic = () => new Date();
 
+// ========  Arrow Function with parameters ========= ///
 
-// ========   ========= ///
+// const myConcat = function(arr1, arr2){
+//     return arr1.concat(arr2);
+// }
 
-// ========   ========= ///
+// const myConcat = (arr1, arr2) =>
+// arr1.concat(arr2);
+// console.log(myConcat([1,2], [3,4,5]));
+
+// ========  higher order arrow function  ========= ///
+
+// const realNumberArray = [4, 5.6, -9.8, 3.14, 42, 6, 8.34, -2];
+// // console.log(realNumberArray);
+
+// const squareList = (arr) => {
+//     const squaredIntegers = arr.filter(num => Number.isInteger(num) && num > 0).map(x => x * 2);
+//     return squaredIntegers;
+// }
+// const squaredIntegers = squareList(realNumberArray);
+// console.log(squaredIntegers);
+
+// const increment = (function () {
+//   return function increment(number, value = 1) { // => if we define a value here then we only have to define number or both of them.
+//     return number + value;
+//   };
+// })();
+// console.log(increment(5, 2)); // => 7
+// console.log(increment(5)); //=> Nan
 
 // ========   ========= ///
 
