@@ -1528,7 +1528,7 @@ accessing object property with bracket notation
 // console.log(source);
 
 // ======== destructuring to pass an object as a function's parameters  ========= ///
-
+// TODO Continou here
 // const stats = {
 //     max: 56.78,
 //     standard_deviation: 4.34,
@@ -1603,13 +1603,117 @@ accessing object property with bracket notation
 
 // ======== Write Concise Declarative Functions  ========= ///
 
+// const bicycle = {
+//     gear: 2,
+//     setGear: function(newGear){
+//         "use strict";
+//         this.gear = newGear;
+//     }
+// };
+// bicycle.setGear(3);
+// console.log(bicycle.gear);
+
+
+// ======== Use class Syntax to Define a Constructor function  ========= ///
+
+// let SpaceShuttle = function(targetPlanet) {
+//     this.targetPlanet = targetPlanet;
+// }
+// let zeus = new SpaceShuttle('Jupiter');
+// console.log(zeus.targetPlanet); // => Jupiter
+
+
+
+// function makeClass() {
+//     class Vegetable {
+//         constructor(name){
+//             this.name = name;
+//         }
+//     }
+//     return Vegetable;
+// }
+// const Vegetable = makeClass();
+// const carrot = new Vegetable('carrot');
+// console.log(carrot.name);
+
+// ======== Use getters and setters to Control Access to an Object  ========= /// 
+
+// class Book {
+//     constructor(author){
+//         this._author = author;
+//     }
+//     // getter
+//     get writer(){
+//         return this._author;
+//     }
+//     // setter
+//     set writer(updateAuthor){
+//         this._author = updateAuthor;
+//     }
+// }
+// function makeClass(){
+//     // class Thermostat {
+//     //     constructor(temp){
+//     //         this.temp = 5/9 + (temp - 32);
+//     //     }
+//     // get temperature(){
+//     //     return this._temp
+//     // }
+//     // set temperature(updateTemp){
+//     //     this._temp = updateTemp
+//     // }
+//     // }
+//     return Thermostat;
+// }
+
+// const Thermostat = makeClass();
+// const thermos = new Thermostat(76);
+// let temp = thermos.temperature;
+// thermos.temperature = 26;
+// temp = thermos.temperature;
+
+// ======== Understand the Differences Between import and require  ========= ///
+
+// const cap = capitalizeString("hello");
+
+// console.log(cap);
+
+// import { capitalizeString } from "./string_function"
+// const cap = capitalizeString("hello");
+// export const capitalizeString = str => str.toUpperCase()
+// console.log(cap);
+
+// ========   ========= ///
 
 
 
 // ========   ========= ///
 
-// ========   ========= ///
+
 
 // ========   ========= ///
+
+
+
+// ========   ========= ///
+
+
+
+// ========   ========= ///
+
+
+
+
+// ========   ========= ///
+
+
+
+// ========   ========= ///
+
+
+
+// ========   ========= ///
+
+
 
 // ========   ========= ///
