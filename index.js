@@ -1529,23 +1529,82 @@ accessing object property with bracket notation
 
 // ======== destructuring to pass an object as a function's parameters  ========= ///
 
-const stats = {
-    max: 56.78,
-    standard_deviation: 4.34,
-    median: 34.54,
-    mode: 23.87,
-    min: -0.75,
-    average: 35.85
-};
-const half = (function(){
-    return function(stats)
-})
+// const stats = {
+//     max: 56.78,
+//     standard_deviation: 4.34,
+//     median: 34.54,
+//     mode: 23.87,
+//     min: -0.75,
+//     average: 35.85
+// };
+// const half = (function(){
+//     return function(stats){
+//         return (stats.max + stats.min) / 2.0;
+//     };
+// })();
 
-// ========   ========= ///
+// // {
+// //   max: 56.78,
+// //   standard_deviation: 4.34,
+// //   median: 34.54,
+// //   mode: 23.87,
+// //   min: -0.75,
+// //   average: 35.85
+// // }
+// // 28.015
 
-// ========   ========= ///
+// console.log(stats);
+// console.log(half(stats));
 
-// ========   ========= ///
+
+// ======== Create Strings using Template Literals  ========= ///
+
+// const person = {
+//     name: "Zodiac Hasbro",
+//     age: 56
+// };
+// // Template literal with multi-line and string interpolation
+// const greeting = `Hello, my name is ${person.name}! I am ${person.age} years old.`
+// console.log(greeting);
+
+// const result = {
+//     success: ["max-length", "no-amid", "prefer-arrow-functions"],
+//     failure: ["no-war", "var-on-top", "linebreak"],
+//     skipped: ["id-blacklist", "no-dup-keys"]
+// };
+// function makeList(arr) {
+//     const resultDisplayArray = null;
+//     /**
+//      * for (let i = 0; i <arr.length; i++){
+//      * resultDisplayArray.push(`<li class="text-warning">${arr[i]}</li>`)}
+//      */
+//     return resultDisplayArray;
+// }
+// /**
+//  * makeList(result.failure) should return:
+//  * [`<li class="text-warning">no-var</li>`
+//  * `<li class="text-warning">var-on-top</li>`
+//  * `<li class="text-warning">linebreak</li>`
+//  * ]
+//  */
+// const resultDisplayArray = makeList(result.failure);
+
+
+// ======== Write Concise Object Literal Declarations Using Simple Fields  ========= ///
+
+// const createPerson = (name, age, gender) => {
+//     return {
+//         name: name,
+//         age: age,
+//         gender: gender
+//     };
+// };
+// console.log(createPerson("Zodiac Hasbro", 56, "male"));
+
+// ======== Write Concise Declarative Functions  ========= ///
+
+
+
 
 // ========   ========= ///
 
