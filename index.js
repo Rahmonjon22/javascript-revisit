@@ -1461,36 +1461,85 @@ accessing object property with bracket notation
 
 // ======== Destructuring Assignment to assign variables from objects  ========= ///
 
-let voxel = {x: 3.6, y: 7.4, z: 6.54};
-let x = voxel.x; // x = 3.6
-let y = voxel.y; // y = 7.4
-let z = voxel.z; // z = 6.54
+// let voxel = {x: 3.6, y: 7.4, z: 6.54};
+// let x = voxel.x; // x = 3.6
+// let y = voxel.y; // y = 7.4
+// let z = voxel.z; // z = 6.54
 
-const { x: a, y: b, z: c } = voxel; // a = 3.6, b=7.4 c = 6.54
+// const { x: a, y: b, z: c } = voxel; // a = 3.6, b=7.4 c = 6.54
 
-const AVG_TEMPERATURES = {
-    today: 77.5,
-    tomorrow: 79
+// const AVG_TEMPERATURES = {
+//     today: 77.5,
+//     tomorrow: 79
+// };
+// function getTempOfTmrw(avgTemperatures){
+//     "use strict";
+//     // change code bellow
+// //    const  tempOfTomorrow = avgTemperatures; // change the line to bellow to destructe output { today: 77.5, tomorrow: 79 }
+//     const {tomorrow: tempOfTomorrow } = avgTemperatures; // change the line output tomorrow: 79
+//     return tempOfTomorrow;
+// }
+// console.log(getTempOfTmrw(AVG_TEMPERATURES)); // => 79
+
+
+
+
+// ======== destructuring with nested objects  ========= ///
+
+// const LOCAL_FORECAST = {
+//     today: { min: 72, max: 83},
+//     tomorrow: { min: 73.3, max: 84.6 }
+// };
+// function getMaxOfTmrw(forecast){
+//     "usestrict";
+//     // const maxOfTomorrow  = undefined; // => undefined
+//     // const { tomorrow :  maxOfTomorrow } = forecast; // => { min: 73.3, max: 84.6 }
+//     const { tomorrow : { max : maxOfTomorrow }} = forecast; // => 84.6
+
+//     return maxOfTomorrow
+// }
+// console.log(getMaxOfTmrw(LOCAL_FORECAST));
+
+// ======== Destructuring to asssign variables from arrays  ========= ///
+
+// const [z, x, , y] = [1, 2, 3, 4, 5, 6];
+// console.log(z, x, y); // => 1 2
+
+// let a = 8, b = 6;
+// (() => {
+//     "use strict";
+//     [a, b] = [ b, a]
+
+// })();
+// console.log(a);
+// console.log(b);
+
+// ======== destructuring with the rest operator  ========= ///
+
+// const source = [1,2,3,4,5,6,7,8,9,10];
+// function removeFirstTwo(list) {
+//     // const arr = list; // => [1,2,3,4,5,6,7,8,9,10];
+//     const [, , ...arr] = list; // => [3,4,5,6,7,8,9,10];
+
+//     return arr;
+// }
+// const arr = removeFirstTwo(source);
+// console.log(arr);
+// console.log(source);
+
+// ======== destructuring to pass an object as a function's parameters  ========= ///
+
+const stats = {
+    max: 56.78,
+    standard_deviation: 4.34,
+    median: 34.54,
+    mode: 23.87,
+    min: -0.75,
+    average: 35.85
 };
-function getTempOfTmrw(avgTemperatures){
-    "use strict";
-    // change code bellow
-    const tempOfTomorrow = undefined; // change the line
-    return tempOfTomorrow;
-}
-console.log(getTempOfTmrw(AVG_TEMPERATURES));
-
-
-
-// ========   ========= ///
-
-// ========   ========= ///
-
-// ========   ========= ///
-
-// ========   ========= ///
-
-// ========   ========= ///
+const half = (function(){
+    return function(stats)
+})
 
 // ========   ========= ///
 
