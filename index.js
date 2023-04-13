@@ -1519,7 +1519,7 @@ accessing object property with bracket notation
 // const source = [1,2,3,4,5,6,7,8,9,10];
 // function removeFirstTwo(list) {
 //     // const arr = list; // => [1,2,3,4,5,6,7,8,9,10];
-//     const [, , ...arr] = list; // => [3,4,5,6,7,8,9,10];
+//     const [ , , ...arr] = list; // => [3,4,5,6,7,8,9,10];
 
 //     return arr;
 // }
@@ -1529,6 +1529,7 @@ accessing object property with bracket notation
 
 // ======== destructuring to pass an object as a function's parameters  ========= ///
 // TODO Continou here
+
 // const stats = {
 //     max: 56.78,
 //     standard_deviation: 4.34,
@@ -1538,20 +1539,22 @@ accessing object property with bracket notation
 //     average: 35.85
 // };
 // const half = (function(){
-//     return function(stats){
-//         return (stats.max + stats.min) / 2.0;
+//     // return function half(stats){
+//     return function half({max, min}){
+
+//         return (max + min) / 2.0;
 //     };
 // })();
 
-// // {
-// //   max: 56.78,
-// //   standard_deviation: 4.34,
-// //   median: 34.54,
-// //   mode: 23.87,
-// //   min: -0.75,
-// //   average: 35.85
-// // }
-// // 28.015
+// {
+//   max: 56.78,
+//   standard_deviation: 4.34,
+//   median: 34.54,
+//   mode: 23.87,
+//   min: -0.75,
+//   average: 35.85
+// }
+// 28.015
 
 // console.log(stats);
 // console.log(half(stats));
@@ -1573,11 +1576,13 @@ accessing object property with bracket notation
 //     skipped: ["id-blacklist", "no-dup-keys"]
 // };
 // function makeList(arr) {
-//     const resultDisplayArray = null;
-//     /**
-//      * for (let i = 0; i <arr.length; i++){
-//      * resultDisplayArray.push(`<li class="text-warning">${arr[i]}</li>`)}
-//      */
+//     // const resultDisplayArray = null;
+//     const resultDisplayArray = [];
+
+   
+//       for (let i = 0; i <arr.length; i++){
+//       resultDisplayArray.push(`<li class="text-warning">${arr[i]}</li>`)}
+     
 //     return resultDisplayArray;
 // }
 // /**
@@ -1588,7 +1593,7 @@ accessing object property with bracket notation
 //  * ]
 //  */
 // const resultDisplayArray = makeList(result.failure);
-
+// console.log(resultDisplayArray);
 
 // ======== Write Concise Object Literal Declarations Using Simple Fields  ========= ///
 
@@ -1599,13 +1604,16 @@ accessing object property with bracket notation
 //         gender: gender
 //     };
 // };
+// this bellow code is the same as above
+// const createPerson = (name, age, gender) => ({ name, age, gender })
 // console.log(createPerson("Zodiac Hasbro", 56, "male"));
 
 // ======== Write Concise Declarative Functions  ========= ///
 
 // const bicycle = {
 //     gear: 2,
-//     setGear: function(newGear){
+//     // setGear: function(newGear){
+//     setGear(newGear){
 //         "use strict";
 //         this.gear = newGear;
 //     }
@@ -1622,7 +1630,13 @@ accessing object property with bracket notation
 // let zeus = new SpaceShuttle('Jupiter');
 // console.log(zeus.targetPlanet); // => Jupiter
 
-
+// class SpaceShuttle{
+//     constructor(targetPlanet){
+//         this.targetPlanet = targetPlanet;
+//     }
+// }
+// let zeus = new SpaceShuttle('Jupiter');
+// console.log(zeus.targetPlanet); // => Jupiter
 
 // function makeClass() {
 //     class Vegetable {
@@ -1651,18 +1665,19 @@ accessing object property with bracket notation
 //         this._author = updateAuthor;
 //     }
 // }
+
 // function makeClass(){
-//     // class Thermostat {
-//     //     constructor(temp){
-//     //         this.temp = 5/9 + (temp - 32);
-//     //     }
-//     // get temperature(){
-//     //     return this._temp
-//     // }
-//     // set temperature(updateTemp){
-//     //     this._temp = updateTemp
-//     // }
-//     // }
+//     class Thermostat {
+//         constructor(temp){
+//             this.temp = 5/9 * (temp - 32);
+//         }
+//     get temperature(){
+//         return this._temp
+//     }
+//     set temperature(updateTemp){
+//         this._temp = updateTemp
+//     }
+//     }
 //     return Thermostat;
 // }
 
@@ -1671,24 +1686,21 @@ accessing object property with bracket notation
 // let temp = thermos.temperature;
 // thermos.temperature = 26;
 // temp = thermos.temperature;
+//  console.log(temp); // => 26
 
 // ======== Understand the Differences Between import and require  ========= ///
-
+// import { capitalizeString } from "./string_function";
 // const cap = capitalizeString("hello");
 
 // console.log(cap);
 
-// import { capitalizeString } from "./string_function"
-// const cap = capitalizeString("hello");
-// export const capitalizeString = str => str.toUpperCase()
-// console.log(cap);
-
-// ========   ========= ///
+// ========  export default ========= ///
+export default function subtract(x,y){return x - y;}
 
 
-
-// ========   ========= ///
-
+// ======== import default  ========= ///
+import subtract from "math_functions"
+subtract(7,4)
 
 
 // ========   ========= ///
